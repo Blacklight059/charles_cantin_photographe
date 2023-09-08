@@ -89,7 +89,7 @@ a {
     display: none;
     color: #ffff;
     text-shadow: 3px;
-    background-color: #7EA16B;
+    background-color: rgb(126, 161, 107);
     justify-content: center;
     align-items: center;
 }
@@ -127,6 +127,16 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.filter-menu {
+    margin-bottom: 12px;
+    color: white;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+}
+
+.btn:hover {
+    background-color: rgba(126, 161, 107, 0.7);    
 }
 
 .title-main {
