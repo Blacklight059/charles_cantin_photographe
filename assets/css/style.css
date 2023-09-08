@@ -56,7 +56,7 @@ a {
     font-size: 1em;
 }
 
-.active-link::after {
+#active-link::after {
     content: '';
     display: block;
     width: 100%;
@@ -135,9 +135,6 @@ a {
     border: var(--bs-border-width) solid var(--bs-border-color);
 }
 
-.btn:hover {
-    background-color: rgba(126, 161, 107, 0.7);    
-}
 
 .title-main {
     color: white;
@@ -151,9 +148,25 @@ a {
     align-items: center;
 
 }
+/* galerie */
 
-/* Galerie */
+.btn:hover {
+    background-color: rgba(126, 161, 107, 0.7);    
+}
 
+/* Tarifs */
+.card {
+    padding: 20px;
+}
 
-
-
+.title-card {
+        color: white;
+        text-shadow: 2px 4px 3px rgba(255, 255, 255, 0.3);
+        background-color: #7EA16B;
+        text-align: center;
+        margin: auto;
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+}
