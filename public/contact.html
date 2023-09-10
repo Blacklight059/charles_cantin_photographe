@@ -7,7 +7,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../assets/css/style.css">
-    <title>Tarifs et prestations</title>
+    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+    <script src="../js/script.js"></script>
+
+    <title>Contact</title>
 </head>
 <body>
     <header class="container-fluid header">
@@ -28,10 +31,10 @@
                         <a href="galerie.html" class="col">Galerie</a>
                     </div>
                     <div class="nav-item dropdown">
-                        <a href="tarifs-et-prestations.html" class="col" id="active-link">Tarifs et prestations</a>
+                        <a href="tarifs-et-prestations.html" class="col">Tarifs et prestations</a>
                     </div>
                     <div class="nav-item dropdown">
-                        <a href="contact.html" class="col">Contact</a>
+                        <a href="contact.html" class="col" id="active-link">Contact</a>
                     </div>
                     
                 </div>
@@ -52,93 +55,47 @@
 
     </header>
     <main class="main">
-        <div class="container-fluid">
-            <div class="row text-center rate">
-                <div class="col-lg-2 col-md-6 col-12 d-block mb-4 h-100 card">
-                    <h4 class="title-card">
-                        Juste moi
-                    </h4>
-                    <p>Séance pour une personne en extérieur ou en studio</p>
-                    <p>Prix : 130 €</p>
-
-                </div>
-                <div class="gallery_product col-lg-2 col-md-4 col-12">
-                    <a href="#" class="d-block mb-4 h-100">
-                        <img src="../assets/img/portrait/Portrait-657116_1280.jpg" alt="baby" class="img-fluid img-thumbnail active">
-                    </a>
-                </div>
-
-                <div class=" col-lg-2 col-md-6 col-12 d-block mb-4 h-100 card">
-                    <h4 class="title-card">
-                        Pour deux
-                    </h4>
-                    <p>Pour deux personnes, en extérieur ou en studio</p>
-                    <p>Prix : 195 €</p>
-                </div>
-                <div class="gallery_product col-lg-2 col-md-4 col-12">
-                    <a href="#" class="d-block mb-4 h-100">
-                        <img src="../assets/img/Couple/Couple-2583943_1280.jpg" alt="baby" class="img-fluid img-thumbnail active">
-                    </a>
-                </div>
-
-                <div class="col-lg-2 col-md-6 col-12 d-block mb-4 h-100 card">
-                    <h4 class="title-card">
-                        Famille
-                    </h4>
-                    <p>Pour la famille ou les amis jusqu’à 4 personnes, en extérieur ou en studio 30 euros en supplément par personne au-delà de 4 (hormis enfant jusqu’à 2 ans)</p>
-                    <p>Prix : 220 €</p>
-                </div>
-                <div class="gallery_product col-lg-2 col-md-4 col-12">
-                    <a href="#" class="d-block mb-4 h-100">
-                        <img src="../assets/img/family/family-3104635.jpg" alt="family" class="img-fluid img-thumbnail active">
-                    </a>
-                </div>
-            
-                <div class=" col-lg-2 col-md-6 col-12 d-block mb-4 h-100 card">
-                    <h4 class="title-card">
-                        Il était une fois
-                    </h4>
-                    <p>Photo de grossesse (À votre domicile, en extérieur ou en studio)</p>
-                    <p>Prix : 160 €</p>
-                </div>
-                <div class="gallery_product col-lg-2 col-md-4 col-12">
-                    <a href="#" class="d-block mb-4 h-100">
-                        <img src="../assets/img/grossesse/grossesse-2640994.jpg" alt="pregnancy" class="img-fluid img-thumbnail active">
-                    </a>
-                </div>
-
-                <div class=" col-lg-2 col-md-6 col-12 d-block mb-4 h-100 card">
-                    <h4 class="title-card">
-                        Mon bébé
-                    </h4>
-                    <p>Photo d’enfant jusqu’à 3 ans (photo à domicile)</p>
-                    <p>Prix : 100 €</p>
-                </div>
-                <div class="gallery_product col-lg-2 col-md-4 col-12">
-                    <a href="#" class="d-block mb-4 h-100">
-                        <img src="../assets/img/Baby/baby-1839564.jpg" alt="baby" class="img-fluid img-thumbnail active">
-                    </a>
-                </div>
-
-                <div class=" col-lg-2 col-md-6 col-12 d-block mb-4 h-100 card">
-                    <h4 class="title-card">
-                        J’immortalise l’événement sur mesure
-                    </h4>
-                    <p>Prestation de mariage ou baptême sur devis</p>
-                </div>
-                <div class="gallery_product col-lg-2 col-md-4 col-12">
-                    <a href="#" class="d-block mb-4 h-100">
-                        <img src="../assets/img/mariage/mariage-2587456.jpg" alt="marriage" class="img-fluid img-thumbnail active">
-                    </a>
-                </div>
-            </div>
+        <div class=" col-lg-2 col-md-6 col-12 d-block mb-4 h-100 card">
+            <form
+            action="https://formspree.io/f/xgejyblg"
+            method="POST"
+            >
+                <label>
+                Email:
+                <input type="email" name="email">
+                </label>
+                <label>
+                    Nom :
+                <textarea name="name"></textarea>
+                </label>
+                <label>
+                    Prénom :
+                <textarea name="name"></textarea>
+                </label>
+                <label>
+                    Adresse :
+                <textarea name="address"></textarea>
+                </label>
+                <label>
+                    Téléphone:
+                <textarea name="phone"></textarea>
+                </label>                
+                <label>
+                    Message:
+                <textarea name="message"></textarea>
+                </label>
+                
+                <!-- your other form fields go here -->
+                <button type="submit">Envoyer</button>
+            </form>
         </div>
 
-
+          
     </main>
     <footer>
 
-    </footer>    
-</body>
+    </footer> 
+ 
+    </body>
 
 </html>

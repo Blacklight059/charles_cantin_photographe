@@ -120,6 +120,15 @@ a {
 
   }
 
+/* Home */
+.main-home {
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}  
+
 /* Main */
 
 .main {
@@ -141,7 +150,7 @@ a {
     text-shadow: 2px 4px 3px rgba(255, 255, 255, 0.3);
     background-color: #7EA16B;
     text-align: center;
-    margin: auto;
+    margin: 25%;
     padding: 50px;
     display: flex;
     justify-content: center;
@@ -164,9 +173,19 @@ a {
         text-shadow: 2px 4px 3px rgba(255, 255, 255, 0.3);
         background-color: #7EA16B;
         text-align: center;
+        font-size: medium;
         margin: auto;
         padding: 30px;
         display: flex;
         justify-content: center;
         align-items: center;    
 }
+
+.card p {
+    margin: auto;
+    padding: 10px;
+    font-size: small;
+}
+
+/* Contact */
+
