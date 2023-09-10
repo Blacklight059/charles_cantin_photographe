@@ -51,11 +51,8 @@ $(this).addClass("active");
             { type: "submit" }      
           ],
           styles: {
-            title: {
-              backgroundColor: "gray"
-            },
             button: {
                 backgroundColor: "#7EA16B",
-            }
+            },
           }
         });

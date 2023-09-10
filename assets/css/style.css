@@ -189,3 +189,27 @@ a {
 
 /* Contact */
 
+button {
+    background-color: #7EA16B;
+    color: white;
+    width: 100%;
+}
+
+form {
+    width: auto;
+    height: max-content;
+}
+
+label {
+    margin: 4px;
+    width: auto;
+    height: 16%;
+}
+
+textarea {
+    width: 100%;
+}
+
+input {
+    width: 100%;
+}
