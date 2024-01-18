@@ -1,0 +1,223 @@
+@font-face {
+	font-family: 'ArgestaDisplay';
+	src: url('./fonts/ArgestaDisplay-Regular.otf')
+	
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    /* L'image est positionnée en fond et est centrée */
+    background: url("../img/mariage/mariage-698501.jpg") no-repeat center center fixed;
+    /* Ajout de la propriété avec les préfixes pour tous les moteurs de rendu */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body {
+    background-color: transparent;
+    margin: 0;
+    line-height: 1.4;
+    letter-spacing: 0.2px;
+    font-family:  'ArgestaDisplay','Montserrat', sans-serif;
+}
+
+/* header */
+
+.header {
+    background-color: transparent;
+    align-items: center;
+    display: inline-block;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-logo {
+    margin-top: 10px;
+    width : 200px;
+    height : 200px;
+}
+
+.navbar-collapse {
+    flex-wrap: wrap;
+    background-color: #7EA16B;
+    margin-left: 40px;
+    padding: 12px;
+}
+
+a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: inherit;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+#active-link::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #000;
+}
+
+.navbar-collapse a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
+}
+
+.navbar-collapse a:hover::after {
+    width: 100%;
+}
+
+.navbar-toggler {
+    background-color: #7EA16B;
+    margin-left: 12px;
+    width : 50px;
+    height : 50px;
+    align-items: center;
+}
+
+.body-title {
+    display: none;
+    color: #ffff;
+    text-shadow: 3px;
+    background-color: rgb(126, 161, 107);
+    justify-content: center;
+    align-items: center;
+}
+.social-buttons {
+    justify-content: center;
+}
+
+.social-buttons a {
+    display: inline-flex;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 32px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0 8px;
+  }
+
+  .bt-top-social{
+      display: flex;
+      list-style: none;
+  }
+
+  .a social-link {
+    margin: auto;
+    padding: 8px;
+
+  }
+
+/* Home */
+.main-home {
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}  
+
+/* Main */
+
+.main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter-menu {
+    margin-bottom: 12px;
+    background-color: #D9D9D9;
+    color: white;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+}
+
+
+.title-main {
+    color: white;
+    text-shadow: 2px 4px 3px rgba(255, 255, 255, 0.3);
+    background-color: #7EA16B;
+    text-align: center;
+    margin: 25%;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+/* galerie */
+
+.btn:hover {
+    background-color: rgba(126, 161, 107, 0.7);    
+}
+
+/* Tarifs */
+.card {
+    padding: 20px;
+    background-color: #D9D9D9;
+}
+
+.title-card {
+        color: white;
+        text-shadow: 2px 4px 3px rgba(255, 255, 255, 0.3);
+        background-color: #7EA16B;
+        text-align: center;
+        font-size: medium;
+        margin: auto;
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+}
+
+.card p {
+    margin: auto;
+    padding: 10px;
+    font-size: small;
+}
+
+/* Contact */
+
+button {
+    background-color: #7EA16B;
+    color: white;
+    width: 100%;
+}
+
+form {
+    width: auto;
+    height: max-content;
+}
+
+label {
+    margin: 4px;
+    width: auto;
+    height: 16%;
+}
+
+textarea {
+    width: 100%;
+}
+
+input {
+    width: 100%;
+}
